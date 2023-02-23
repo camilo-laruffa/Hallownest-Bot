@@ -37,16 +37,17 @@ class Bot(BotBase):
     async def on_disconnected(self):
         print("bot disconnected")
 
-
     async def on_ready(self):
         if not self.ready:
             self.ready = True
             #Cambiar esta ID por la del server de hallownest cuando este listo para el deploy (Ver minuto 10:30 de https://www.youtube.com/watch?v=jVnEqd8bnBk&list=PLYeOw6sTSy6ZGyygcbta7GcpI8a5-Cooc&index=6)
-            self.guild = self.get_guild(414473395082887168)
+            self.guild = self.get_guild(568567979042930688)
             print("bot ready")        
 
             # Obtiene el canal con X id y manda un mensaje 
-            channel = self.get_channel(540398488333189120)
+            
+            channel = self.get_channel(884182152881799238)
+            
             #await channel.send("Now online!")
 
             #Este es un mensaje embed que son esos mensajes locos que hacen los bots
