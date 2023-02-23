@@ -25,7 +25,7 @@ class Bot(BotBase):
     def run(self, version):
         self.VERSION = version
 
-        with open("./library/bot/token", "r", encoding="utf-8") as tf:
+        with open("./library/bot/token.0", "r", encoding="utf-8") as tf:
             self.TOKEN = tf.read()
 
         print("running bot...")
@@ -46,7 +46,7 @@ class Bot(BotBase):
 
             # Obtiene el canal con X id y manda un mensaje 
             
-            channel = self.get_channel(884182152881799238)
+            channel = self.get_channel(1078448718551990272)
             
             #await channel.send("Now online!")
 
