@@ -1,8 +1,11 @@
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 from discord.ext.commands import Bot as BotBase
+from discord import Intents 
+
 
 PREFIX = "+"
 OWNER_IDS = [1078311123515879535]
+
 
 class Bot(BotBase):
     def __init__(self):
@@ -11,7 +14,7 @@ class Bot(BotBase):
         self.guild = None
         self.schedule = AsyncIOScheduler()
 
-        super().__init__(command_prefix=PREFIX, owner_ids=OWNER_IDS)
+        super().__init__(command_prefix=PREFIX, owner_ids=OWNER_IDS, intents=Intents.default())
 
     def run(self, version):
         self.VERSION = version
