@@ -1,1 +1,2 @@
-# El Hallownest bot :emoji copado:
+# El Hallownest bot 😎
+### Es un bot para el discord
